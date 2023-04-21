@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "req",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 20 */2 * *"
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "direction": "out",
+      "path": "nbadataset/{name}.csv",
+      "connection": "AzureWebJobsStorage"
+    }
+  ],
+  "disabled": false
+}
